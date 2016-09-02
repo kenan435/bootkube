@@ -45,8 +45,6 @@ var files = []struct {
 	{"kube-system-ns.yaml", "SystemNSTemplate"},
 	{"kube-flannel.yaml", "FlannelTemplate"},
 	{"kube-flannel-config.yaml", "FlannelConfigTemplate"},
-	{"containernet-10.conf", "ContainernetTemplate10"},
-	{"loopback-99.conf", "LoopbackTemplate99"},
 
 }
 

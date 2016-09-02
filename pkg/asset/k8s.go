@@ -25,9 +25,8 @@ func newStaticAssets() Assets {
 		mustCreateAssetFromTemplate(AssetPathKubeDNSRc, internal.DNSRcTemplate, noData),
 		mustCreateAssetFromTemplate(AssetPathKubeDNSSvc, internal.DNSSvcTemplate, noData),
 		mustCreateAssetFromTemplate(AssetPathSystemNamespace, internal.SystemNSTemplate, noData),
-		mustCreateAssetFromTemplate(AssetPathFlannelNet10, internal.ContainernetTemplate10, noData),
-		mustCreateAssetFromTemplate(AssetPathFlannelNet99, internal.LoopbackTemplate99, noData),
 		mustCreateAssetFromTemplate(AssetPathFlannelConfig, internal.FlannelConfigTemplate, noData),
+		mustCreateAssetFromTemplate(AssetPathFlannel, internal.FlannelTemplate, noData),
 	}
 }
 
@@ -36,7 +35,6 @@ func newDynamicAssets(conf Config) Assets {
 		mustCreateAssetFromTemplate(AssetPathKubelet, internal.KubeletTemplate, conf),
 		mustCreateAssetFromTemplate(AssetPathAPIServer, internal.APIServerTemplate, conf),
 		mustCreateAssetFromTemplate(AssetPathProxy, internal.ProxyTemplate, conf),
-		mustCreateAssetFromTemplate(AssetPathFlannel, internal.FlannelTemplate, conf),
 	}
 }
 

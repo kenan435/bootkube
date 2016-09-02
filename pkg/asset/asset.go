@@ -35,8 +35,6 @@ const (
 	AssetPathSystemNamespace         = "manifests/kube-system-ns.yaml"
 	AssetPathFlannel		 = "manifests/kube-flannel.yaml"
 	AssetPathFlannelConfig		 = "manifests/kube-flannel-config.yaml"
-	AssetPathFlannelNet10		 = "flannel/etc/cni/net.d/10-containernet.conf"
-	AssetPathFlannelNet99		 = "flannel/etc/cni/net.d/99-loopback.conf"
 )
 
 // AssetConfig holds all configuration needed when generating
